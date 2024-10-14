@@ -28,5 +28,20 @@ div:hover{
 
 /* PSEUDO-ELEMENTS */
 
+/* div::first-letter{
+    font-size: 46px;
+}
+ */
 
+div{
+    position: relative;
+}
 
+div::before{
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: red;
+    position: absolute;
+    right: 35px;
+}
