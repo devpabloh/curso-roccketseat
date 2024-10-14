@@ -1,0 +1,19 @@
+section{
+    position: relative; /* Respeita o fluxo */
+    border: 1px solid blue;
+}
+
+div{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    
+}
+.position{
+    background-color: red;
+    position: absolute; /* Não respeita o fluxo */
+    bottom: 20px;
+    left: 20px;
+    z-index: auto;
+}
