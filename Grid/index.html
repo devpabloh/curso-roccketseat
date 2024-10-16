@@ -7,36 +7,68 @@
     <style>
         #app{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr; 
+            
+            grid-template-areas: 
+            "header header header"
+            "main main aside"
+            "footer footer footer";
+
+            height: 100vh;
         }
 
-        #app >div{
+        #app > *{
             border: 1px solid red;
         }
 
-        span{
-            border: 1px solid blue;
+        #app header{
+            grid-area: header;
+        }
+
+        #app main{
+            grid-area: main;
+        }
+
+        #app aside{
+            grid-area: aside;
+        }
+
+        #app footer{
+            grid-area: footer;
         }
     </style>
 </head>
 <body>
     <div id="app">
-        <div>1</div>
-        <span>2</span>
-        <span>3</span>
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
     </div>
     
     <!-- Todo o grid é composto de 2 principais grupos:
     'container: o pai' e 'itens: o(s) filhos' -->
 
     <!-- CONTAINER (PAI)
+    
     - display: grid;
     - grid template: ; é a shorthand para as propriedades abaixo
         - grid-template-columns: ;
         - grid-template-rows: ;
-        - grid-template- areas: ;
-
-
+        - grid-template- areas: ; 
+        
+    - gap: ;
+        - row-gap: ;
+        - column-gap: ;
+        -->
+    
+    <!-- ITENS (FILHOS)
+    
+    -grid-column: ;
+        - grid-column-start: ;
+        - grid-column-end;
+    -grid-row: ;
+        - grid-row-start: ;
+        - grid-row-end: ;
     -->
 </body>
 </html>
