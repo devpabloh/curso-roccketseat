@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        #app{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+        }
+
+        #app >div{
+            border: 1px solid red;
+        }
+
+        span{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div>1</div>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    
+    <!-- Todo o grid é composto de 2 principais grupos:
+    'container: o pai' e 'itens: o(s) filhos' -->
+
+    <!-- CONTAINER (PAI)
+    - display: grid;
+    - grid template: ; é a shorthand para as propriedades abaixo
+        - grid-template-columns: ;
+        - grid-template-rows: ;
+        - grid-template- areas: ;
+
+
+    -->
+</body>
+</html>
