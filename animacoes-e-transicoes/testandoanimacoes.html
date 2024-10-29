@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando animações</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+
+        #scrollToTop{
+            position: fixed;
+            bottom: 200px;
+            right: 20px;
+            display: none;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        #scrollToTop.show{
+            display: block;
+            opacity: 1;
+        }
+
+        #scrollToTop.hide{
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="scrollToTop" aria-label="voltar ao topo">↑ Topo</button>
+    
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop')
+
+        window.addEventListener('scroll', ()=>{
+            if(window.scrollY > 300){
+                scrollToTopButton.classList.add('show')
+            }else{
+                scrollToTopButton.classList.remove('show')
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', ()=>{
+            window.scrollTo({top:0, behavior:'smooth',
+            })
+        })
+
+    </script>
+</body>
+</html>

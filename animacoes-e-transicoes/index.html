@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+
+        div{
+            background-color: white;
+            width: 4rem;
+            height: 4rem;
+            opacity: .6;
+            transition-property: opacity, transform; /* podemos separar por virgula para colocar mais de uma propriedade */
+            transition-duration: 1s, 600ms; /* podemos colocar uma virgula depois da primeira para adicionar tempos diferentes para diferentes propriedades de transição (transition-property) */
+            transition-delay: 1s, 20ms;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-timing-function: steps(5);
+
+        }
+
+        /* div:hover{
+            opacity: 1;
+            transform: translateX(150px);
+        } */
+
+        @keyframes move{
+            0%{
+                background-color: blue;
+            }
+
+            100%{
+                transform: translatey(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
