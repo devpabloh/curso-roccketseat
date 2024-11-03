@@ -109,3 +109,48 @@ function sun1(a,b){
 }  
 
 console.log(sun1(9,8))
+
+
+/* 
+    Comentário de documentação em javascript (sintaxe de JSDoc), O JSDoc é um padrão para incorporar documentação no código-fonte a partir desses comentários.
+*/
+
+/**
+ * Authenticates the user
+ * 
+ * @param {string} email user email.
+ * @param {String} password more than 6 characters.
+ * @returns {Number} user ID.
+ */
+
+function signIn(email, password){
+    // fluxo de autenticação do usuário
+    return 7
+}
+
+signIn()
+
+//função anônima (função que não possuí nome)
+
+let showMessage = function(){
+    return "Olá, Pablo"
+}
+
+console.log(showMessage())
+
+
+let showMessage2 = function(name){ // você também consegue passar parâmetros nas funções anônimas
+    return `Olá, ${name}`
+}
+
+console.log(showMessage2("pablo"))
+
+/* 
+    Arrow function (função de seta)
+*/
+
+const showMessage3 = ()=>{
+    console.log("Olá")
+}
+
+showMessage3()
