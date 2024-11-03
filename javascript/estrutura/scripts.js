@@ -70,3 +70,28 @@ try {
 }finally{
     console("Fim!")
 }
+
+/* 
+    - Parâmetro: é a variável (escopo da função) que irá receber um valor em uma função.
+    - argumento: é o valor que é passado para a função.
+
+*/
+
+function message(userName){
+    console.log(`Olá, ${userName} seja bem vindo!`)
+    
+}
+
+message("Pablo")
+
+function sum(a,b){
+    console.log(a+b)
+}
+
+sum(4,5)
+
+function joinText(text1, text2, text3){
+    console.log(text1, text2, text3)
+}
+
+joinText("Pablo", "Henrique", "Ferreira")
