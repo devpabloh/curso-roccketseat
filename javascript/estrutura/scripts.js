@@ -95,3 +95,17 @@ function joinText(text1, text2, text3){
 }
 
 joinText("Pablo", "Henrique", "Ferreira")
+
+
+function sun(a,b){
+    console.log(a + b)
+}
+
+sun(7,8)
+
+function sun1(a,b){
+
+    return a + b
+}  
+
+console.log(sun1(9,8))
