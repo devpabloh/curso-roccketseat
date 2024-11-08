@@ -15,18 +15,30 @@ const user = {
     email: "devpabloh.gmail.com",
     age: 30,
     name: { // chamado de estrutura de objeto aninhado, um objeto dentro do outro.
-        firstName: "Pablo",
-        lastName: "Henrique"
+        first_name: "Pablo",
+        lastName: "Henrique",
     },
     adress: {
         street: "Rua Belo Horizonte",
         number: "90",
         city:"Olinda",
         postal_code: "53040-110",
-        message: ()=>{
-            console.log(`Oi ${name.firstName}`)
-        }
+    },
+    message: ()=>{
+        console.log(`Oi ${user.name.first_name}`)
     }
 }
 
-console.log(user.name)
+// acessando propriedades e métodos usando a notação de ponto
+console.log(user.email)
+
+//acessando propriedade de objetos
+console.log(user.name.lastName) 
+
+//executando o método do objeto
+user.message()
+
+//Outra forma de acessar é através da notação de colchetes
+console.log(user["email"])
+console.log(user["name"]["first_name"])
+user["message"]()
