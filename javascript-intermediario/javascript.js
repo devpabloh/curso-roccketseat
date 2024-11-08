@@ -42,3 +42,61 @@ user.message()
 console.log(user["email"])
 console.log(user["name"]["first_name"])
 user["message"]()
+
+const product = {
+    name: "Teclado",
+    quantity: 100,
+}
+
+console.log(product.name)
+//atualizando o valor de uma propriedade
+product.name = "Mouse"
+console.log(product.name)
+
+console.log(product.quantity)
+product.quantity = 90
+console.log(product.quantity)
+
+//atualizando o valor das propriedades utilizando a notação dos colchetes
+product["quantity"] = "80"
+console.log(product["quantity"])
+
+/* 
+    OPTIONAL CHAINING (?.) - encadeamento opcional se a propriedade ou função chamada é nullish (null or undefined), a expressão retorna undefined em vez de gerar um erro.
+
+    Útil ao explorar o conteúdo de um objeto quando não existe garantia de existência de determinadas propriedades obrigatórias.
+*/
+
+const user1 = {
+    id: 1,
+    name:"Pablo",
+    /*  address: {
+        street: "Av. Brasil",
+        city: "São Paulo",
+        geo:{
+            latitude: 47.8080,
+            longitude: 17.5674, 
+        },
+    }, */
+    message: function(){
+        console.log(`${this.name}`)
+    }
+}
+
+console.log(user1?.address?.street)
+user1.message?.()
+
+/* 
+    OPERADOR DE COALESCÊNCIA NULA (??)
+    Operador lógico que retorna o seu operador do lado direito quando o seu operador do lado esquerdo é null ou undefined. Caso contrário, ele retorna o seu operador do lado esquerdo.
+*/
+
+let content = null
+console.log(content ?? "conteúdo padrão")
+
+const user3 = {
+    name: "Pablo",
+    avatar: undefined,
+}
+
+console.log(user3.avatar ?? "default.png")
