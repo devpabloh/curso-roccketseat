@@ -121,3 +121,21 @@ product1.details()
 const product2 = new createProduct("Mouse")
 console.log(product2.name)
 product2.details()
+
+let mensagem = "Estou estudando os fundamentos do javascript"
+
+console.log(mensagem.toLocaleLowerCase())
+console.log(mensagem.toUpperCase())
+console.log(mensagem.length)
+
+let password = "123456"
+
+if(password.length < 6){
+    console.log(" A senha deve ter ao menos 6 caracteres")
+}else{
+    console.log("A senha está correta")
+}
+
+let value= 123456
+
+console.log(toString(value).length)
