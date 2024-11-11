@@ -181,3 +181,45 @@ console.log(newArray.length)
 const available = new Array(10)
 console.log(available)
 console.log(available.length)
+
+// cria o Array
+let fruits = ["apple", "Banana", "Laranja"]
+console.log(fruits)
+fruits.push("Café")
+console.log(fruits)
+
+// acessando o item pelo índice.
+console.log(fruits[1])
+
+//retornando o nome do ultimo item da lista de forma dinâmica
+console.log(fruits[fruits.length - 1])
+
+// Convertendo uma string para Array
+let fullName = "Pablo Henrique Ferreira de França"
+console.log(fullName)
+
+// Cria um Array com os nomes separando pelo espaço
+console.log(fullName.split(" "))
+
+//cria um Array com as letras
+console.log(Array.from(fullName))
+
+users = []
+
+// adicionando um item no final do Array
+users.push("Pablo")
+users.push("Henrique")
+users.push("Ferreira")
+
+console.log(users)
+// adiciona um item no inicio do Array
+users.unshift("França")
+console.log(users)
+
+// remove o primeiro item do Array
+users.shift()
+console.log(users)
+
+// remove o último item do Array
+users.pop()
+console.log(users)
