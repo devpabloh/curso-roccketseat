@@ -167,3 +167,17 @@ console.log(mensagem1.indexOf("aprendendo"))
 
 //verificar se existe aquela palavra na string
 console.log(mensagem1.includes("javascript"))
+
+// CRIANDO UM ARRAY COM CONSTRUTOR 
+const newArray = new Array()
+
+//vendo o tamanho do Array
+console.log(newArray.length)
+
+// [] - Array
+// {} - Objects
+
+// Cria o Array com 10 posições vazias.
+const available = new Array(10)
+console.log(available)
+console.log(available.length)
