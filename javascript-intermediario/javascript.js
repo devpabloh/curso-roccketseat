@@ -139,3 +139,31 @@ if(password.length < 6){
 let value= 123456
 
 console.log(toString(value).length)
+
+// substituindo parte de um texto
+
+console.log(mensagem.replace("os fundamentos do javascript", "Métodos de string"))
+
+// Remove espaços em branco no inicio e no final da string.
+let textWithSpace = "    Texto de exemplo   "
+console.log(textWithSpace.length)
+
+console.log(textWithSpace.trim().length)
+
+//Separando e unindo strings
+let text = "pablo, Henrique, Ferreira"
+let separate = text.split(",")
+console.log(separate)
+
+let mensagem1 = "Estou aprendendo javascript"
+console.log(mensagem1.split(" "))
+
+// Unindo strings
+let joined = separate.join(" - ")
+console.log(joined)
+
+// Obtém a posição da palavra.
+console.log(mensagem1.indexOf("aprendendo"))
+
+//verificar se existe aquela palavra na string
+console.log(mensagem1.includes("javascript"))
