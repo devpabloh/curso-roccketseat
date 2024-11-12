@@ -223,3 +223,29 @@ console.log(users)
 // remove o último item do Array
 users.pop()
 console.log(users)
+
+// Usando o índices
+
+// Encontra e retorna o índice do Array
+let frutas = ["Apple", "Watermelon", "Strawberry", "Lemon"]
+let position = frutas.indexOf("Watermelon")
+console.log(frutas)
+console.log(position)
+
+/* frutas.splice(1,2) */
+frutas.splice(position, 1)
+console.log(frutas)
+
+// Para saber se existe ou não um item no array
+console.log(frutas.includes("Apple"))
+console.log(frutas.includes("Orange"))
+
+let myArray = ["Um texto", 10, true, function (){console.log("função dentro do Arry")},{name: "Pablo", email: "pablohenriqueadm94@gmail.com"}]
+
+console.log(myArray[0])
+console.log(myArray[1])
+console.log(myArray[2])
+myArray[3]()
+console.log(myArray[4].name)
+console.log(myArray[4].email)
+
