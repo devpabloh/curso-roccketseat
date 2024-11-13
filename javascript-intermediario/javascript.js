@@ -249,3 +249,33 @@ myArray[3]()
 console.log(myArray[4].name)
 console.log(myArray[4].email)
 
+// WHILE: executa até que a condição seja VERDADEIRA.
+
+let execute = true
+
+while(execute){
+    let response = window.prompt
+}
+
+// DO WHILE: repete até que a condição especificada seja VERDADEIRA. No entanto, a instrução será executada pelo menos uma vez antes da condição ser verificada.
+
+let value1 = 0
+
+do{
+    value1++
+    console.log(value)
+}while(value < 10)
+
+    console.log("segue o fluxo")
+
+/* 
+    FOR repete até que a condição especificada seja Falsa.
+
+    - Variável de controle
+    - Condição
+    - Incremento ou decremento de variável de controle
+*/
+let tamanho = 10
+for(let i= 0; i < tamanho; i++){
+    console.log(`Eita, poxa ${i}`)
+}
