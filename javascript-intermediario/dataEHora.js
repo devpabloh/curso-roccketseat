@@ -41,3 +41,19 @@ console.log(date.getMinutes())
 
 // Segundos
 console.log(date.getSeconds())
+
+//modificar o ano
+date.setFullYear(2030)
+
+//modificar o mês
+date.setMonth(2)
+
+//modificar o dia
+date.setDate(10)
+
+//modificar a hora
+date.setHours(18)
+
+//modificar os minutos
+date.setMinutes(15)
+
