@@ -57,3 +57,14 @@ date.setHours(18)
 //modificar os minutos
 date.setMinutes(15)
 
+let date2 = new Date("2024-07-02T14:30:00")
+
+// formata para o dia sempre ter 2 digitos.
+console.log(date.getDate().toString().padStart(2, "0"))
+
+// Exibe data e hora no horário local
+console.log(date2.toLocaleDateString())
+console.log(date2.toLocaleTimeString())
+
+//Exive no formato escolhido
+console.log(date2.toLocaleString("en"))
