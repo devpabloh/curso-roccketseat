@@ -76,8 +76,42 @@ console.log(date2.toLocaleString("pt-BR", {
 )
 
 console.log(date2.toLocaleString("pt-BR", {
+    dataStyle: "medium",
+})
+)
+
+console.log(date2.toLocaleString("pt-BR", {
     dataStyle: "long",
 })
 )
 
+console.log(date2.toLocaleString("pt-BR", {
+    dataStyle: "full",
+})
+)
 
+console.log(data2.toLocaleString("pt-BR",{
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+}))
+
+
+//Intl é a API de internalização do ECMAscript
+
+//Obtém informações da localidade
+const currentLocale = Intl.DateTimeFormat().resolvedOptions()
+
+console.log(currentLocale)
+
+console.log(new Intl.DateTimeFormat("pt-BR").format(new Date()))
+console.log(new Intl.DateTimeFormat("en-US").format(new Date()))
+
+// Obtem a diferença em minutos do timezone.
+const data = new Date()
+
+console.log(data.getTimezoneOffset())
+
+// Obtém a diferença em horas do timezone.
+console.log(data.getTimezoneOffset()/60)
