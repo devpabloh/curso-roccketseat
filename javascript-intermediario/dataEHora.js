@@ -66,5 +66,18 @@ console.log(date.getDate().toString().padStart(2, "0"))
 console.log(date2.toLocaleDateString())
 console.log(date2.toLocaleTimeString())
 
-//Exive no formato escolhido
+//Exibe no formato escolhido
 console.log(date2.toLocaleString("en"))
+
+//Exibe a data e hora em styles diferentes.
+console.log(date2.toLocaleString("pt-BR", {
+    dateStyle: "short",
+    })
+)
+
+console.log(date2.toLocaleString("pt-BR", {
+    dataStyle: "long",
+})
+)
+
+
