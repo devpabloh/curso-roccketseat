@@ -85,9 +85,34 @@ class Animal{
 }
 
 class Dog extends Animal {
+    makeNoise(){
+        console.log("woof! woof!")
+    }
+}
 
+class Cat extends Animal{
+    makeNoise(){
+        console.log("Miau... Miau... Miau!")
+    }
 }
 
 const dog = new Dog()
 dog.makeNoise()
+const cat = new Cat()
+cat.makeNoise()
+
+let obj = []
+
+try {
+    /* obj.execute() */
+    if(!obj.includes(17)){
+        throw new Error("O número 17 não está disponível")
+    }
+} catch (error) {
+    if(error instanceof TypeError){ // se o error for uma instância do prótotipo typeError então mostre essa mensagem no console.log
+        console.log("Método indisponível")
+    }
+    console.log(error)
+}
+
 
