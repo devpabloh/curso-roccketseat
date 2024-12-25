@@ -49,3 +49,14 @@ console.log(apple)
 // Ignorando o primeiro e o segundo na desestruturação, você também pode ignorar posições usando a virgula para cada um que você quer que seja ignorado
 const [ , ,orange] = fruits
 console.log(orange)
+
+// Desestruturando objetos
+
+const product = {
+    description: "Teclado",
+    price: "150,00"
+}
+
+const {description, price} = product
+console.log(`Essa é a descrição ${description}`)
+console.log(`Esse é o preço ${price}`)
