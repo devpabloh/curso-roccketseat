@@ -60,3 +60,11 @@ const product = {
 const {description, price} = product
 console.log(`Essa é a descrição ${description}`)
 console.log(`Esse é o preço ${price}`)
+
+function newProduct(description, price){
+    console.log("### Novo produto ###")
+    console.log(`Essa é a descrição ${description}`)
+    console.log(`Esse é o preço R$ ${price}`)
+}
+
+newProduct("Notbook", 10000)
