@@ -61,10 +61,43 @@ const {description, price} = product
 console.log(`Essa é a descrição ${description}`)
 console.log(`Esse é o preço ${price}`)
 
-function newProduct(description, price){
+function newProduct({description, price}){
     console.log("### Novo produto ###")
     console.log(`Essa é a descrição ${description}`)
     console.log(`Esse é o preço R$ ${price}`)
 }
 
-newProduct("Notbook", 10000)
+newProduct({description: "Notbook", price: 70})
+
+// Rest params (...) permite representar um número indefinido de argumentos como um array.
+
+function values(a, ...rest){
+    console.log(a)
+    console.log(rest)
+}
+
+values(1,2,3)
+
+// Spread (espalhar) permite que um objeto iterável, como uma expressão de array ou uma string seja expandida para ser usado onde zero ou mais argumentos.
+
+const numbers = [1,2,3]
+console.log(numbers)
+
+// Spread
+console.log(...numbers)  
+
+// Criando objeto           
+const data1 = [{
+    name: "Pablo Henrique", 
+    email: "devpabloh@gmail",
+    avatar: "r.png"
+},{
+    name: "Pablo Henrique", 
+email: "devpabloh@gmail",
+avatar: "r.png"
+}]
+
+console.log(data1)
+
+// Utilizando o spread no array com objetos.
+console.log(...data1)
