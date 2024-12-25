@@ -27,3 +27,25 @@ function sum(a, a, b){
 
 const result = sum(1,3,2)
 console.log(result)
+
+// destructuring assignment (desestruturação) permite extrair dados de arrays ou de objetos em variáveis distintas.
+const data = ["Pablo Henrique", "devpabloh@gmail.com"]
+
+// Desestruturando array
+const [userName, email] = data
+console.log(userName) // Pablo Henrique
+console.log(email) // devpabloh
+
+const fruits = ["Banana", "Apple", "Orange"]
+
+// Desestruturar somento o primeiro.
+const [banana] = fruits
+console.log(banana)
+
+// ignorando o primeiro na desestruturação, o uso do _ é feito para ignorar posições e pegar apenas o que a gente quer
+const [_, apple] = fruits
+console.log(apple)
+
+// Ignorando o primeiro e o segundo na desestruturação, você também pode ignorar posições usando a virgula para cada um que você quer que seja ignorado
+const [ , ,orange] = fruits
+console.log(orange)
