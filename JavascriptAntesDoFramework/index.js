@@ -101,3 +101,25 @@ console.log(data1)
 
 // Utilizando o spread no array com objetos.
 console.log(...data1)
+
+// O método map() chama a função callback recebida por parâmetro para cada elemento do Array Original, em ordem, e constrói um novo Array com base nos retornos de cada chamada. E no final, devolve um novo Array.
+
+const products = ["Teclado", "Mouse", "Monitor"]
+
+// Percorrendo os itens do Array, essa sintaxe completa é usada quando se quer além de percorrer, fazer algo com aqueles dados, como fazer alguma lógica e etc
+products.map((product) => {console.log(product)})
+
+// Sintaxe reduzida
+products.map(product => console.log(product))
+
+// Utilizando o novo objeto retornado.
+const formatted = products.map((product)=>{
+    /* return product.toUpperCase() */
+
+    return {
+        id: Math.random(),
+        description: product
+    }
+})
+
+console.log(formatted)
