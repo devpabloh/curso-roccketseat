@@ -180,11 +180,17 @@ console.log(result2)
 // Exemplo de Arrays de idades.
 const ages = [15,30,39,50, 29]
 
-// Verificar se todas as idades são iguais ou maiores que 18
+// Verificar se todas as idades são iguais ou maiores que 18.
 const result3 = ages.every((age)=> age >= 18)
 
-console.log(result3) // retorna false, porque o número 15 não passa na codição estabelecida
+console.log(result3) // retorna false, porque o número 15 não passa na codição estabelecida.
 
+
+// O método some() testa se ao menos um dos elementos do Array passa na condição e retorna um valor true ou false.
+const ages1 = [15, 30, 39, 29]
+
+const result4 = ages1.some((age) => age < 18)
+console.log(result4)
 
 
 
