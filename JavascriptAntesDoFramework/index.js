@@ -123,3 +123,20 @@ const formatted = products.map((product)=>{
 })
 
 console.log(formatted)
+
+// Método filter() cria um novo array com todos os elementos que passaram na condição.
+
+const words = ["Java", "Javascript", "Python", "PHP", "C", "HTML", "CSS", "Web"]
+const result1 = words.filter((word)=> word.length > 4)
+console.log(result1)
+
+const products1 = [
+    {description: "Teclado", price: 150, promotion: true},
+    {description: "Mouse", price: 50, promotion: false},
+    {description: "Monitor", price: 900, promotion: true},
+    {description: "Fonte", price: 100, promotion: false},
+]
+
+const promotion = products1.filter((product)=> product.promotion === true)
+
+console.log(promotion)
