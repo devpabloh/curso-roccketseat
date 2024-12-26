@@ -140,3 +140,37 @@ const products1 = [
 const promotion = products1.filter((product)=> product.promotion === true)
 
 console.log(promotion)
+
+// O método findIndex() retorna o índice no array do primeiro elemento que satisfazer a condição. Caso contrário, retorna -1, indicando que nenhum elemento passou no teste.
+
+const values1 = [4,6,8,12]
+
+// Obtendo o primeiro índice do elemento que o valor é maior do que 4
+const index =(values1.findIndex((value) => value > 4))
+
+
+console.log(index)
+console.log(values1[index]) // obtendo o valor que está naquele indice que foi achado
+
+//Exemplo de quando o método findIndex() não encontra
+console.log(values1.findIndex((value) => value > 12)) // Já que não tem, ele retorna -1
+
+// O método find() retorna o valor do primeiro elemento do array que satisfazer a condição. Caso contrário, undefined é retornado.
+
+const values2 = [2,12,8,130,44]
+
+// Retorna o primeiro elemento que o valor é maior que 10
+const found = values2.find((value)=> value > 10)
+console.log(found) // retorna 12, que é o primeiro item que ele achou no qual satisfaz a condição que foi passada
+
+// Exemplo com objetos
+
+const fruits1 = [
+    {name: "Apple", quantidade: 23},
+    {name: "Bananas", quantidade:25},
+    {name: "Laranjas", quantidade:52},
+    {name: "Mamão", quantidade:60},
+]
+
+const result2 = fruits1.find((fruits)=>  fruits.name === "Bananas")
+console.log(result2)
