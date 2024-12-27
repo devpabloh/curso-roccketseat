@@ -9,6 +9,16 @@ const book = {
 
 const updatedBook = {
     ...book,
+    title: "Criando um front-end moderno com HTML",
+    category: "HTML",
+    type: "programming",
 }
 
-console.log(updatedBook)
+console.log(book) // Original intacto
+console.log(updatedBook) // Modificado
+
+
+// Utilizando operador de desestruturação (rest operator) para remover propriedades.
+
+const {category, ...updatedBook2} = book
+console.log(updatedBook2)
