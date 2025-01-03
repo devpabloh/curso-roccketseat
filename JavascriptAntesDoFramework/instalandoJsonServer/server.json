@@ -1,7 +1,34 @@
 {
-    "products": [
-        {"id": "1", "name": "Mouse", "price": 150.25},
-        {"id": "2", "name": "Teclado", "price": 800},
-        {"id": "3", "name": "Monitor", "price": 1000}
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Mouse",
+      "price": 150.25
+    },
+    {
+      "id": "2",
+      "name": "Teclado",
+      "price": 800
+    },
+    {
+      "id": "3",
+      "name": "Monitor",
+      "price": 1000
+    },
+    {
+      "id": "1735902189503",
+      "name": "ventoinha",
+      "price": "150"
+    },
+    {
+      "id": "1735902206338",
+      "name": "ventoinha2",
+      "price": "150"
+    },
+    {
+      "id": "1735902266863",
+      "name": "ventoinha",
+      "price": "150"
+    }
+  ]
 }
