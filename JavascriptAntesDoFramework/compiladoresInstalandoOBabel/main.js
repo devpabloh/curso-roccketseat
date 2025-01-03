@@ -1,7 +1,12 @@
-class user {
+class Usuario {
     constructor({email}){
         this.email = email
     }
+
+    sendMessage(){
+        console.log("mensagem enviada para:", this.email)
+    }
 }
 
-let user = new UserActivation({email: "pablohenriqueadm94@gmail.com"})
+const usuario = new Usuario({email: "pablohenriqueadm94@gmail.com"})
+usuario.sendMessage()
