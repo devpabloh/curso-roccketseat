@@ -15,7 +15,7 @@ var Usuario = /*#__PURE__*/function () {
   return _createClass(Usuario, [{
     key: "sendMessage",
     value: function sendMessage() {
-      console.log("mensagem enviada para:", this.email);
+      console.log("Mensagem enviada para:", this.email);
     }
   }]);
 }();
