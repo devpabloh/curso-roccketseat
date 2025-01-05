@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
     entry: path.resolve(__dirname, "src", "js", "index.js"), 
     output: {
-        falename: "main.js",
+        filename: "main.js",
         path: path.resolve(__dirname, "dist"),
     },
     mode: "development",
@@ -12,7 +12,7 @@ module.exports = {
     module:{
         rules: [
             {
-                test: /\.css$/i,
+                test: /\.css$/i, /* aqui podemos definir regras (rules), para isso usamos expressão regular */
                 use: ["style-loader", "css-loader"]
             }
             
