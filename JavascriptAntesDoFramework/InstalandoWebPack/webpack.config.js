@@ -13,7 +13,8 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i, /* aqui podemos definir regras (rules), para isso usamos expressão regular */
-                use: ["style-loader", "css-loader"]
+                use: ["style-loader", "css-loader"],
+                exclude: "/node_modules",
             }
             
         ]
