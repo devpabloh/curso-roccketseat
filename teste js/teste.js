@@ -7,5 +7,5 @@ function trasParaFrente(){
 console.log(trasParaFrente())
 
 palavra = "javascript"
-palavra.split("").reverse().join("")
-console.log(palavra)
+palavra = palavra.split("").reverse().join("")
+console.log(palavra) 
