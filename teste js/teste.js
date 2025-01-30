@@ -13,3 +13,7 @@ console.log(palavra)
 segundaPalavra = "caralho"
 segundaPalavra = segundaPalavra.split("").reverse().join("")
 console.log(segundaPalavra) 
+
+function save(){
+    console.log("Hello World!")
+}
